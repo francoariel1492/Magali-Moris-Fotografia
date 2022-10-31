@@ -1,0 +1,139 @@
+@font-face {
+  font-family: Primera;
+  src: url(fuente/montserrat.ttf);
+}
+@font-face {
+  font-family: Segunda;
+  src: url(fuente/margenta.ttf);
+}
+@font-face {
+  font-family: Tercera;
+  src: url(fuente/longline.ttf);
+}
+@font-face {
+  font-family: Cuarta;
+  src: url(fuente/tommy.otf);
+}
+@font-face {
+  font-family: Quinta;
+  src: url(fuente/gloryuss.ttf);
+}
+body {
+  font-family: Primera;
+}
+
+.section1 {
+  background-color: #ffe0e8;
+  background-image: url(./elementosgraficos/camera3.png);
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-position: left;
+}
+
+.section2 {
+  background-color: #ffe0e8;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section3 {
+  background-color: #ffe0e8;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection1 {
+  background-image: url(./elementosgraficos/1.0.png);
+  background-attachment: scroll;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection2 {
+  background-image: url(./elementosgraficos/5.0.png);
+  background-attachment: scroll;
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection3 {
+  background-image: url(./elementosgraficos/4.png);
+  background-attachment: scroll;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection4 {
+  background-image: url(./elementosgraficos/2.2.png);
+  background-attachment: scroll;
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  width: 100%;
+}
+
+header {
+  background-color: #d6a7d1;
+}
+
+.maga {
+  width: 50%;
+}
+
+#fixedbutton {
+  width: 5%;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+header li a {
+  font-family: Cuarta;
+  color: #ededf9 !important;
+  transition: 0.5s;
+}
+header li a:hover {
+  background: #ffe0e8;
+  color: #8787a3 !important;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 3s;
+}
+
+.titulo {
+  font-family: Segunda;
+}
+
+.subTitulo {
+  font-family: Tercera;
+}/*# sourceMappingURL=estilos.css.map */
