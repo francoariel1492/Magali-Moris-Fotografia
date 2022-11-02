@@ -150,10 +150,6 @@ h2 {
   color: #8787a3;
 }
 
-.presentacion {
-  background-image: url(/css/elementosgraficos/);
-}
-
 .subTitulo2 {
   font-family: Tercera;
   color: #ffe0e8;
@@ -175,7 +171,7 @@ h2 {
 }
 
 .laburos {
-  background-image: url(/css/elementosgraficos/8.0.png);
+  background-image: url(./elementosgraficos/8.0.png);
   background-attachment: scroll;
   background-position: center;
   background-size: contain;
