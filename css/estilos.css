@@ -20,19 +20,23 @@
 }
 body {
   font-family: Primera;
+  background-color: #ededf9;
 }
 
 .section1 {
   background-color: #ffe0e8;
-  background-image: url(./elementosgraficos/camera3.png);
+  background-image: url(./elementosgraficos/camera2.png);
   background-attachment: scroll;
   background-size: contain;
   background-repeat: repeat-y;
   background-position: left;
 }
 
+.section1 {
+  color: #8787a3;
+}
+
 .section2 {
-  background-color: #ffe0e8;
   background-attachment: scroll;
   background-position: center;
   background-size: contain;
@@ -40,7 +44,7 @@ body {
 }
 
 .section3 {
-  background-color: #ffe0e8;
+  background-color: #d6a7d1;
   background-attachment: scroll;
   background-position: center;
   background-size: contain;
@@ -48,7 +52,7 @@ body {
 }
 
 .subSection1 {
-  background-image: url(./elementosgraficos/1.0.png);
+  background-image: url(./elementosgraficos/3.png);
   background-attachment: scroll;
   background-position: right;
   background-size: contain;
@@ -56,7 +60,7 @@ body {
 }
 
 .subSection2 {
-  background-image: url(./elementosgraficos/5.0.png);
+  background-image: url(./elementosgraficos/2.png);
   background-attachment: scroll;
   background-position: left;
   background-size: contain;
@@ -72,7 +76,7 @@ body {
 }
 
 .subSection4 {
-  background-image: url(./elementosgraficos/2.2.png);
+  background-image: url(./elementosgraficos/5.png);
   background-attachment: scroll;
   background-position: left;
   background-size: contain;
@@ -101,7 +105,7 @@ header {
 header li a {
   font-family: Cuarta;
   color: #ededf9 !important;
-  transition: 0.5s;
+  transition: 0.5s !important;
 }
 header li a:hover {
   background: #ffe0e8;
@@ -136,4 +140,36 @@ header li a:hover {
 
 .subTitulo {
   font-family: Tercera;
+}
+
+h1 {
+  color: #8787a3;
+}
+
+h2 {
+  color: #8787a3;
+}
+
+.presentacion {
+  background-image: url(/css/elementosgraficos/);
+}
+
+.subTitulo2 {
+  font-family: Tercera;
+  color: #ffe0e8;
+}
+
+.titulo3 {
+  color: #ededf9;
+}
+
+.section3 p {
+  color: transparent;
+  background: linear-gradient(180deg, rgb(255, 235, 205) 0%, #8787a3 10%);
+  text-shadow: 2px 1px #ffe0e8;
+  -webkit-background-clip: text;
+}
+
+.section2 p {
+  color: #8787a3;
 }/*# sourceMappingURL=estilos.css.map */
