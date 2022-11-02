@@ -172,4 +172,12 @@ h2 {
 
 .section2 p {
   color: #8787a3;
+}
+
+.laburos {
+  background-image: url(/css/elementosgraficos/8.0.png);
+  background-attachment: scroll;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=estilos.css.map */
