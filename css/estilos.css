@@ -27,9 +27,8 @@ body {
   background-color: #ffe0e8;
   background-image: url(./elementosgraficos/camera2.png);
   background-attachment: scroll;
-  background-size: contain;
-  background-repeat: repeat-y;
-  background-position: left;
+  background-size: 10%;
+  background-repeat: no-repeat;
   color: #8787a3;
 }
 
@@ -49,6 +48,11 @@ body {
 .section3 {
   background-color: #aee5e8;
   color: #8787a3;
+  background-image: url(./elementosgraficos/6.png);
+  background-attachment: scroll;
+  background-position: bottom;
+  background-size: 35%;
+  background-repeat: no-repeat;
 }
 
 .section4 {
@@ -62,7 +66,7 @@ body {
 .subSection1 {
   background-image: url(./elementosgraficos/3.png);
   background-attachment: scroll;
-  background-position: right;
+  background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -70,23 +74,103 @@ body {
 .subSection2 {
   background-image: url(./elementosgraficos/2.png);
   background-attachment: scroll;
-  background-position: left;
+  background-position: 25%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection3 {
+  background-image: url(./elementosgraficos/4.png);
+  background-attachment: scroll;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection4 {
+  background-image: url(./elementosgraficos/5.png);
+  background-attachment: scroll;
+  background-position: 75%;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .subSection5 {
-  background-image: url(./elementosgraficos/4.png);
+  background-image: url(./elementosgraficos/1.png);
   background-attachment: scroll;
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.subSection5 {
-  background-image: url(./elementosgraficos/5.png);
+.subSection6 {
+  background-image: url(./elementosgraficos/3.2.png);
+  background-attachment: scroll;
+  background-position: 75%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection7 {
+  background-image: url(./elementosgraficos/2.2.png);
+  background-attachment: scroll;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection8 {
+  background-image: url(./elementosgraficos/4.2.png);
+  background-attachment: scroll;
+  background-position: 25%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection9 {
+  background-image: url(./elementosgraficos/5.2.png);
   background-attachment: scroll;
   background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection10 {
+  background-image: url(./elementosgraficos/1.1.png);
+  background-attachment: scroll;
+  background-position: 25%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection11 {
+  background-image: url(./elementosgraficos/5.1.png);
+  background-attachment: scroll;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection12 {
+  background-image: url(./elementosgraficos/3.4.png);
+  background-attachment: scroll;
+  background-position: 75%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection13 {
+  background-image: url(./elementosgraficos/5.4.png);
+  background-attachment: scroll;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subSection14 {
+  background-image: url(./elementosgraficos/9.1.png);
+  background-attachment: scroll;
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -147,6 +231,11 @@ header li a:hover {
 
 .subTitulo {
   font-family: Tercera;
+}
+
+.subTitulo3 {
+  font-family: Tercera;
+  color: #8787a3;
 }
 
 h1 {
