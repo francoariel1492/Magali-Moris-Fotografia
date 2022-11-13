@@ -64,102 +64,17 @@ body{
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
+    h2{
+        color: #8787a3;
+    }
+    p{
+        color: #ededf9
+    };
+    .titulo3{
+        color: #ededf9;
+    }
 }
 
-.subSection1{
-    background-image: url(./elementosgraficos/3.png);
-    background-attachment: scroll;
-    background-position:left;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-
-.subSection2{
-    background-image: url(./elementosgraficos/2.png);
-    background-attachment: scroll;
-    background-position:25%;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-
-.subSection3{
-    background-image: url(./elementosgraficos/4.png);
-    background-attachment: scroll;
-    background-position:center;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-
-.subSection4{
-    background-image: url(./elementosgraficos/5.png);
-    background-attachment: scroll;
-    background-position:75%;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-.subSection5{
-    background-image: url(./elementosgraficos/1.png);
-    background-attachment: scroll;
-    background-position:right;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-.subSection6{
-    background-image: url(./elementosgraficos/3.2.png);
-    background-attachment: scroll;
-    background-position:75%;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-.subSection7{
-    background-image: url(./elementosgraficos/2.2.png);
-    background-attachment: scroll;
-    background-position:center;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-.subSection8{
-    background-image: url(./elementosgraficos/4.2.png);
-    background-attachment: scroll;
-    background-position:25%;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-.subSection9{
-    background-image: url(./elementosgraficos/5.2.png);
-    background-attachment: scroll;
-    background-position:left;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-.subSection10{
-    background-image: url(./elementosgraficos/1.1.png);
-    background-attachment: scroll;
-    background-position:25%;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-.subSection11{
-    background-image: url(./elementosgraficos/5.1.png);
-    background-attachment: scroll;
-    background-position:center;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-.subSection12{
-    background-image: url(./elementosgraficos/3.4.png);
-    background-attachment: scroll;
-    background-position:75%;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-.subSection13{
-    background-image: url(./elementosgraficos/5.4.png);
-    background-attachment: scroll;
-    background-position:right;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
 .subSection14{
     background-image: url(./elementosgraficos/9.1.png);
     background-attachment: scroll;
@@ -185,21 +100,6 @@ header{
     position: fixed;
     bottom: 0px;
 }
-// #fixedbutton2 {
-//     width: 5%;
-//     position: fixed;
-//     bottom: 0px; 
-// }
-// #fixedbutton3 {
-//     width: 5%;
-//     position: fixed;
-//     bottom: 0px; 
-// }
-// #fixedbutton4 {
-//     width: 5%;
-//     position: fixed;
-//     bottom: 0px; 
-// }
 
 header {
     li {
@@ -259,13 +159,6 @@ h1{
     color: #ffe0e8;
 }
 
-.titulo3{
-    color: #ededf9;
-}
-
-// p{
-//     color: #ffe0e8;
-// }
 
 .section5{
     background-color: #d8f8f3;
