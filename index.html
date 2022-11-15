@@ -22,9 +22,9 @@
     />
     <title>Magali Moris Fotografia</title>
   </head>
-  <body class="text-center animate__animated animate__fadeIn">
+  <body class="text-center animate__animated animate__fadeIn container-fluid">
     <header class="row header">
-      <nav class="navbar navbar-expand-md px-3">
+      <nav class="navbar navbar-expand-md col-12 g-0">
         <a
           class="hvr-grow col-3 col-sm-2 col-md-2 col-lg-1 navbar-brand"
           href="index.html"
@@ -49,30 +49,54 @@
         <div class="col-2 collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="col-sm-12 justify-content-end navbar-nav fs-4">
             <li class="nav-item">
-              <a class="nav-link active" href="#scrollspyHeading1" aria-current="" href="#">Sesiones</a>
+              <a
+                class="nav-link active"
+                href="#scrollspyHeading1"
+                aria-current=""
+                href="#"
+                >Sesiones</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#scrollspyHeading2" aria-current="" href="#">Propuestas</a>
+              <a
+                class="nav-link active"
+                href="#scrollspyHeading2"
+                aria-current=""
+                href="#"
+                >Propuestas</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#scrollspyHeading3" aria-current="" href="#">Preguntas</a>
+              <a
+                class="nav-link active"
+                href="#scrollspyHeading3"
+                aria-current=""
+                href="#"
+                >Preguntas</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#scrollspyHeading4" aria-current="" href="#">Contacto</a>
+              <a
+                class="nav-link active"
+                href="#scrollspyHeading4"
+                aria-current=""
+                href="#"
+                >Contacto</a
+              >
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="row">
-      <section class="container section1">
-        <h1 class="display-1 pt-5 titulo">Magali Moris Fotografia</h1>
+      <section class="section1 col-12 g-0">
+        <h1 class="display-1 p-5 titulo">Magali Moris Fotografia</h1>
         <div
-          class="d-flex justify-content-center align-items-center pt-5 mt-5 px-5 px-5"
+          class="d-flex flex-sm-row flex-column justify-content-center align-items-center pt-5"
         >
-          <div>
+          <div class="col">
             <h2 class="display-3 subTitulo">Mi historia</h2>
-            <p class="lead fs-4 p-5">
+            <p class="lead fs-4 p-3">
               ¡Hola! Mi nombre es Magalí y soy fotógrafa de animales y sus
               familias. Me encantan los perros desde que soy muy chica y poco a
               poco me fuí adentrando cada vez más en su mundo. Es mi objetivo
@@ -81,10 +105,12 @@
               bienvenida a mi web!
             </p>
           </div>
-          <img src="css/maga/maga.jpg" class="maga" />
+          <div class="col">
+            <img src="css/maga/maga.jpg" class="maga w-100 img-fluid" />
+          </div>
         </div>
       </section>
-      <section class="section2" id="scrollspyHeading1">
+      <section class="section2 col-12 g-0" id="scrollspyHeading1">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#ffe0e8"
@@ -92,9 +118,9 @@
             d="M0,96L48,101.3C96,107,192,117,288,138.7C384,160,480,192,576,208C672,224,768,224,864,197.3C960,171,1056,117,1152,117.3C1248,117,1344,171,1392,197.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
         </svg>
-        <div class="laburos" >
-          <h2 class="display-1 titulo pb-5 mb-5">Sesiones</h2>
-          <p class="lead fs-4 px-5 mx-5 pb-5 mb-5">
+        <div class="laburos">
+          <h2 class="display-1 titulo p-3 m-3">Sesiones</h2>
+          <p class="lead fs-4 p-3">
             Las sesiones las realizamos siempre de manera positiva, dejando que
             el animal se tome el tiempo de explorar el lugar antes de comenzar.
             Hacemos pruebas previas con los flashes (si la sesión es en estudio)
@@ -102,161 +128,154 @@
             juguetes preferidos para que sea una jornada lo más amena posible.
           </p>
         </div>
-        <div class="gallery">
-          <div class="gallery__column">
-            <a
-              class="gallery__link"
-            >
-              <figure class="gallery__thumb">
-                <img
-                  src="css/galeria/300x300.jpg"
-                  alt="foto1"
-                  class="gallery__image"
-                />
-              </figure>
-            </a>
-
-            <a
-              class="gallery__link"
-            >
-              <figure class="gallery__thumb">
-                <img
-                  src="css/galeria/300x500.jpg"
-                  alt="foto2"
-                  class="gallery__image"
-                />
-              </figure>
-            </a>
-
-            <a
-              class="gallery__link"
-            >
-              <figure class="gallery__thumb">
-                <img
-                  src="css/galeria/300x3002.jpg"
-                  alt="foto3"
-                  class="gallery__image"
-                />
-              </figure>
-            </a>
+        <div class="d-md-none d-block ukiyo">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="css/galeria/300x300.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="css/galeria/300x3002.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="css/galeria/300x3005.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="gallery d-none d-md-block">
+          <div class="d-flex">
+            <div class="gallery__column">
+              <a class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="css/galeria/300x300.jpg"
+                    alt="foto1"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
 
-          <div class="gallery__column">
-            <a
-              class="gallery__link"
-            >
-              <figure class="gallery__thumb">
-                <img
-                  src="css/galeria/300x3003.jpg"
-                  alt="foto4"
-                  class="gallery__image"
-                />
-              </figure>
-            </a>
+              <a class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="css/galeria/300x500.jpg"
+                    alt="foto2"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
 
-            <a
-              class="gallery__link"
-            >
-              <figure class="gallery__thumb">
-                <img
-                  src="css/galeria/300x3004.jpg"
-                  alt="foto5"
-                  class="gallery__image"
-                />
-              </figure>
-            </a>
+              <a class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="css/galeria/300x3002.jpg"
+                    alt="foto3"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
+            </div>
 
-            <a
-              class="gallery__link"
-            >
-              <figure class="gallery__thumb">
-                <img
-                  src="css/galeria/300x5002.jpg"
-                  alt="foto6"
-                  class="gallery__image"
-                />
-              </figure>
-            </a>
-          </div>
+            <div class="gallery__column">
+              <a class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="css/galeria/300x3003.jpg"
+                    alt="foto4"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
 
-          <div class="gallery__column">
-            <a
-              class="gallery__link"
-            >
-              <figure class="gallery__thumb">
-                <img
-                  src="css/galeria/300x5009.jpg"
-                  alt="foto7"
-                  class="gallery__image"
-                />
-              </figure>
-            </a>
+              <a class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="css/galeria/300x3004.jpg"
+                    alt="foto5"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
 
-            <a
-              class="gallery__link"
-            >
-              <figure class="gallery__thumb">
-                <img
-                  src="css/galeria/300x3005.jpg"
-                  alt="foto8"
-                  class="gallery__image"
-                />
-              </figure>
-            </a>
+              <a class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="css/galeria/300x5002.jpg"
+                    alt="foto6"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
+            </div>
 
-            <a
-              class="gallery__link"
-            >
-              <figure class="gallery__thumb">
-                <img
-                  src="css/galeria/300x3006.jpg"
-                  alt="foto9"
-                  class="gallery__image"
-                />
-              </figure>
-            </a>
-          </div>
+            <div class="gallery__column">
+              <a class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="css/galeria/300x5009.jpg"
+                    alt="foto7"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
 
-          <div class="gallery__column">
-            <a
-              class="gallery__link"
-            >
-              <figure class="gallery__thumb">
-                <img
-                  src="css/galeria/300x3008.jpg"
-                  alt="foto10"
-                  class="gallery__image"
-                />
-              </figure>
-            </a>
+              <a class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="css/galeria/300x3005.jpg"
+                    alt="foto8"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
 
-            <a
-              class="gallery__link"
-            >
-              <figure class="gallery__thumb">
-                <img
-                  src="css/galeria/300x3009.jpg"
-                  alt="foto12"
-                  class="gallery__image"
-                />
-              </figure>
-            </a>
+              <a class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="css/galeria/300x3006.jpg"
+                    alt="foto9"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
+            </div>
 
-            <a
-              class="gallery__link"
-            >
-              <figure class="gallery__thumb">
-                <img
-                  src="css/galeria/300x5003.jpg"
-                  alt="foto13"
-                  class="gallery__image"
-                />
-              </figure>
-            </a>
+            <div class="gallery__column">
+              <a class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="css/galeria/300x3008.jpg"
+                    alt="foto10"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
+
+              <a class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="css/galeria/300x3009.jpg"
+                    alt="foto12"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
+
+              <a class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="css/galeria/300x5003.jpg"
+                    alt="foto13"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
+            </div>
           </div>
         </div>
       </section>
-      <section class="section3" >
+      <section class="section3 col-12 g-0">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#ededf9"
@@ -264,11 +283,11 @@
             d="M0,32L48,32C96,32,192,32,288,80C384,128,480,224,576,250.7C672,277,768,235,864,197.3C960,160,1056,128,1152,101.3C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
         </svg>
-        <h2 class="display-1 titulo p-2 m-2 mb-5 pb-5" id="scrollspyHeading2">Propuestas</h2>
-        <ul>
+        <h2 class="display-1 titulo py-5" id="scrollspyHeading2">Propuestas</h2>
+        <ul class="list-unstyled">
           <li class="py-2">
             <h3 class="display-4 subTitulo">Mini sesión en estudio</h3>
-            <p class="lead fs-4 p-3 m-3">
+            <p class="lead fs-4">
               Sesión de 30 min. de duración y la entrega de 5 fotografías en
               formato digital, editadas en alta calidad. La sesión se realiza en
               Villa Ballester.
@@ -276,7 +295,7 @@
           </li>
           <li class="py-2">
             <h3 class="display-4 subTitulo">Sesión en estudio</h3>
-            <p class="lead fs-4 p-3 m-3">
+            <p class="lead fs-4">
               Sesión de 1 hr. de duración y la entrega de 10 fotografías en
               formato digital, editadas en alta calidad. La sesión se realiza en
               Villa Ballester.
@@ -284,7 +303,7 @@
           </li>
           <li class="pt-2">
             <h3 class="display-4 subTitulo">Sesión en exterior</h3>
-            <p class="lead fs-4 p-3 m-3">
+            <p class="lead fs-4">
               Sesión de 1 hr. de duración y la entrega de 10 fotografías en
               formato digital, editadas en alta calidad. El valor de esta sesión
               incluye locaciones en: Villa Ballester, Agronomía, Palermo,
@@ -292,8 +311,23 @@
             </p>
           </li>
         </ul>
+        <div class="d-md-none d-block ukiyo">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="css/galeria/300x300.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="css/galeria/300x3002.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="css/galeria/300x3005.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="pb-3 section4" >
+      <section class="pb-3 section4 col-12 g-0">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#aee5e8"
@@ -301,8 +335,10 @@
             d="M0,32L48,32C96,32,192,32,288,80C384,128,480,224,576,250.7C672,277,768,235,864,197.3C960,160,1056,128,1152,101.3C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
         </svg>
-        <h2 class="display-1 titulo p-5 m-5 titulo3" id="scrollspyHeading3">Preguntas frecuentes</h2>
-        <div 
+        <h2 class="display-1 titulo py-5 titulo3" id="scrollspyHeading3">
+          Preguntas frecuentes
+        </h2>
+        <div
           class="d-flex flex-column flex-sm-row justify-content-center align-items-center pt-1 pb-5 subSection1"
         >
           <div class="col lead">
@@ -315,7 +351,7 @@
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/1.0.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/1.0.png" alt="" />
           </div>
         </div>
         <div
@@ -330,7 +366,7 @@
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/2.1.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/2.1.png" alt="" />
           </div>
         </div>
         <div
@@ -341,11 +377,12 @@
               ¿Puedo ponerle accesorios para que use en las fotos?
             </h2>
             <p class="fs-5 p-2 m-2">
-              Siempre y cuando el animal esté habituado a su uso, sí. No hay inconvenientes.
+              Siempre y cuando el animal esté habituado a su uso, sí. No hay
+              inconvenientes.
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/3.1.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/3.1.png" alt="" />
           </div>
         </div>
         <div
@@ -356,11 +393,14 @@
               ¿Que tengo que llevar el día de la sesión?
             </h2>
             <p class="fs-5 p-2 m-2">
-              Tenés que traer sus snacks favoritos, cortados en trozos chicos (fundamental para el momento de las fotos), alguno de sus juguetes y su platito para el agua. Si está acostumbrado al uso de accesorios, también podés traerlos.
+              Tenés que traer sus snacks favoritos, cortados en trozos chicos
+              (fundamental para el momento de las fotos), alguno de sus juguetes
+              y su platito para el agua. Si está acostumbrado al uso de
+              accesorios, también podés traerlos.
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/5.1.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/5.1.png" alt="" />
           </div>
         </div>
         <div
@@ -371,11 +411,14 @@
               ¿Que tengo que llevar si la sesión se realiza en exterior?
             </h2>
             <p class="fs-5 p-2 m-2">
-              Es súper importante que tu perro asista con collar/pretal, correa y chapita de identificación (no te preocupes por esos detalles en las fotos. Si lo deseas, pueden borrarse en el proceso de edición). ¡No te olvides las bolsitas para juntar si ensucia!
+              Es súper importante que tu perro asista con collar/pretal, correa
+              y chapita de identificación (no te preocupes por esos detalles en
+              las fotos. Si lo deseas, pueden borrarse en el proceso de
+              edición). ¡No te olvides las bolsitas para juntar si ensucia!
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/4.1.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/4.1.png" alt="" />
           </div>
         </div>
         <div
@@ -386,11 +429,13 @@
               ¿En que formato se entregan las fotos?
             </h2>
             <p class="fs-5 p-2 m-2">
-              Todas las fotografías se entregan en formato digital y editadas en alta calidad. El objetivo es que puedas darle el uso que quieras: imprimirlas, revelarlas, usarlas para las redes, etc.
+              Todas las fotografías se entregan en formato digital y editadas en
+              alta calidad. El objetivo es que puedas darle el uso que quieras:
+              imprimirlas, revelarlas, usarlas para las redes, etc.
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/2.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/2.png" alt="" />
           </div>
         </div>
         <div
@@ -401,26 +446,28 @@
               ¿Cuánto demora la entrega de las fotos?
             </h2>
             <p class="fs-5 p-2 m-2">
-              Desde el momento en que recibo la selección de fotos elegidas, la entrega demora alrededor de 10 días hábiles.
+              Desde el momento en que recibo la selección de fotos elegidas, la
+              entrega demora alrededor de 10 días hábiles.
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/3.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/3.png" alt="" />
           </div>
         </div>
         <div
           class="d-flex flex-column flex-sm-row-reverse align-items-center pt-1 pb-5 subSection8"
         >
           <div class="col">
-            <h2 class="fs-1 py-2 subTitulo2">
-              ¿Cómo recibo las fotos?
-            </h2>
+            <h2 class="fs-1 py-2 subTitulo2">¿Cómo recibo las fotos?</h2>
             <p class="fs-5 p-2 m-2">
-              Tanto las fotos para preselección (que llevan marca de agua) como las de entrega, se envían a través de We Transfer. Recordá que esta plataforma te da un plazo de 7 días para realizar la descarga.
+              Tanto las fotos para preselección (que llevan marca de agua) como
+              las de entrega, se envían a través de We Transfer. Recordá que
+              esta plataforma te da un plazo de 7 días para realizar la
+              descarga.
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/5.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/5.png" alt="" />
           </div>
         </div>
         <div
@@ -431,11 +478,13 @@
               ¿Se realiza la entrega de fotos sin editar?
             </h2>
             <p class="fs-5 p-2 m-2">
-              No se realiza la entrega de fotos en crudo (sin editar), sin excepción. Mi objetivo es que tengas en tus manos un trabajo de calidad y eso incluye el proceso de edición.
+              No se realiza la entrega de fotos en crudo (sin editar), sin
+              excepción. Mi objetivo es que tengas en tus manos un trabajo de
+              calidad y eso incluye el proceso de edición.
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/4.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/4.png" alt="" />
           </div>
         </div>
         <div
@@ -443,14 +492,18 @@
         >
           <div class="col">
             <h2 class="fs-1 py-2 subTitulo2">
-              ¿Puedo modificar la foto una vez que la recibo? ¿Agregar filtros, recortarla, etc?
+              ¿Puedo modificar la foto una vez que la recibo? ¿Agregar filtros,
+              recortarla, etc?
             </h2>
             <p class="fs-5 p-2 m-2">
-              Las fotos que te entrego no pueden ser sobreeditadas. En el caso de querer realizar algún tipo de modificación, podés solicitarlo sin inconvenientes. El trabajo de edición lleva mi estilo y es mi carta de presentación. 
+              Las fotos que te entrego no pueden ser sobreeditadas. En el caso
+              de querer realizar algún tipo de modificación, podés solicitarlo
+              sin inconvenientes. El trabajo de edición lleva mi estilo y es mi
+              carta de presentación.
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/5.4.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/5.4.png" alt="" />
           </div>
         </div>
         <div
@@ -461,11 +514,14 @@
               ¿Puedo pedirte más fotos de las que incluye la sesión abonada?
             </h2>
             <p class="fs-5 p-2 m-2">
-              ¡Sí, por supuesto!. Las fotos de la sesión las guardo por un plazo de 90 días a partir de la fecha en que se realizó. Podés solicitar las que quieras durante ese tiempo. Escribime para consultar el valor actualizado de las fotos extras.
+              ¡Sí, por supuesto!. Las fotos de la sesión las guardo por un plazo
+              de 90 días a partir de la fecha en que se realizó. Podés solicitar
+              las que quieras durante ese tiempo. Escribime para consultar el
+              valor actualizado de las fotos extras.
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/1.4.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/1.4.png" alt="" />
           </div>
         </div>
         <div
@@ -476,12 +532,20 @@
               ¡Ya me decidí! ¿Cómo hago para reservar una sesión?
             </h2>
             <p class="fs-5 p-2 m-2">
-              ¡Buenísimo! Va a ser un placer compartir una jornada a pura foto. Para realizar la reserva de una sesión, enviame un mail a: mmfotografiademascotas@gmail.com y contame sobre tu disponibilidad de días y horarios para así poder revisar mi agenda y ofrecerte una fecha. Una vez coordinado esto, te envío los datos para realizar el pago de la seña (50% del total de la sesión). La misma deberá abonarse en un plazo de 48 hs posteriores a haber coordinado la fecha de la sesión, caso contrario se dispondrá de esa fecha para otra familia que la requiera.
-              El 50% restante se abona el día de la sesión.              
+              ¡Buenísimo! Va a ser un placer compartir una jornada a pura foto.
+              Para realizar la reserva de una sesión, enviame un mail a:
+              mmfotografiademascotas@gmail.com y contame sobre tu disponibilidad
+              de días y horarios para así poder revisar mi agenda y ofrecerte
+              una fecha. Una vez coordinado esto, te envío los datos para
+              realizar el pago de la seña (50% del total de la sesión). La misma
+              deberá abonarse en un plazo de 48 hs posteriores a haber
+              coordinado la fecha de la sesión, caso contrario se dispondrá de
+              esa fecha para otra familia que la requiera. El 50% restante se
+              abona el día de la sesión.
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/2.4.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/2.4.png" alt="" />
           </div>
         </div>
         <div
@@ -492,99 +556,114 @@
               ¿Cuáles son los medios de pago?
             </h2>
             <p class="fs-5 p-2 m-2">
-              Podés abonar en efectivo, por transferencia/depósito bancario o por Mercado Pago (este último tiene un 10% de recargo)
+              Podés abonar en efectivo, por transferencia/depósito bancario o
+              por Mercado Pago (este último tiene un 10% de recargo)
             </p>
           </div>
           <div class="col">
-            <img class="w-50" src="css/elementosgraficos/3.4.png" alt="">
+            <img class="w-50" src="css/elementosgraficos/3.4.png" alt="" />
           </div>
         </div>
         <div class="col">
           <h2 class="fs-1 py-2 subTitulo2">
-            Una vez que abono la seña ¿Cuánto tiempo tengo para realizar la sesión?
+            Una vez que abono la seña ¿Cuánto tiempo tengo para realizar la
+            sesión?
           </h2>
           <p class="fs-5 p-2 m-2">
-            La seña tiene una validez de 30 días a partir del momento en que es realizada. Pasado ese plazo, deberá volver a abonarse.
-            Es importante también destacar que no se realizan devoluciones por cancelaciones a último momento (menos de 24 hs de anticipación) o por inasistencias sin previo aviso.              
+            La seña tiene una validez de 30 días a partir del momento en que es
+            realizada. Pasado ese plazo, deberá volver a abonarse. Es importante
+            también destacar que no se realizan devoluciones por cancelaciones a
+            último momento (menos de 24 hs de anticipación) o por inasistencias
+            sin previo aviso.
           </p>
         </div>
         <div
           class="d-flex flex-column flex-sm-row align-items-center pt-1 pb-5 subSection14"
         >
-
-          <div class="d-flex flex-column flex-sm-row align-items-center pt-1 pb-5 ">
-            <h2 class="fs-1 pt-5 mt-5 subTitulo3">¿Tenés alguna duda que no haya sido respondida anteriormente? Te invito a dejarme tu consulta en este formulario de contacto haciendo click acá.</h2>
-            <div class="col">
-              <img class="w-50" src="css/elementosgraficos/1.0.png" alt="">
-            </div>
+          <div
+            class="d-flex flex-column flex-sm-row align-items-center pt-1 pb-5"
+          >
+            <h2 class="fs-1 pt-5 mt-5 subTitulo3">
+              ¿Tenés alguna duda que no haya sido respondida anteriormente? Te
+              invito a dejarme tu consulta en este formulario de contacto
+              haciendo click acá.
+            </h2>
           </div>
-
         </div>
       </section>
-      <section class="section5" >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d6a7d1" fill-opacity="1" d="M0,256L48,240C96,224,192,192,288,154.7C384,117,480,75,576,90.7C672,107,768,181,864,229.3C960,277,1056,299,1152,256C1248,213,1344,107,1392,53.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-        <h2 class="display-1 titulo p-5 m-5 titulo3" id="scrollspyHeading4">Contacto</h2>
+      <section class="section5 col-12 g-0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#d6a7d1"
+            fill-opacity="1"
+            d="M0,256L48,240C96,224,192,192,288,154.7C384,117,480,75,576,90.7C672,107,768,181,864,229.3C960,277,1056,299,1152,256C1248,213,1344,107,1392,53.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+        <h2 class="display-1 titulo py-5" id="scrollspyHeading4">Contacto</h2>
         <form
-        class="d-flex flex-column align-items-center justify-content-center "
-        action="https://formsubmit.co/francoariel1492@gmail.com"
-        method="POST"
-      >
-        <div class="col-sm-3 py-1">
-          <label for="fname" class="form-label lead fs-4">Nombre Completo</label>
-          <input
-            type="text"
-            name="Nombre"
-            class="form-control"
-            id="inputAddress"
-            placeholder=""
-          />
-        </div>
-        <div class="col-sm-3 py-1">
-          <label for="inputEmail4" class="form-label lead fs-4">Email</label>
-          <input
-            type="email"
-            name="Email"
-            class="form-control"
-            id="inputEmail4"
-          />
-        </div>
-        <div class="col-sm-3 py-1">
-          <label for="inputState" class="form-label lead fs-4">Sesion que me interesa</label>
-          <select id="inputState" name="Curso" class="form-select">
-            <eoption selected></eoption>
-            <option>Mini Sesion Estudio</option>
-            <option>Sesion Estudio</option>
-            <option>Sesion en exterior</option>
-          </select>
-        </div>
-        <div class="form-floating col-sm-4 py-3 my-3">
-          <textarea
-            class="form-control"
-            name="Comentarios"
-            id="floatingTextarea2"
-            style="height: 250px"
-          ></textarea>
-        </div>
-        <div class="py-2 pb-5">
-          <button type="submit" class="btn btn-lg">
-            Enviar
-          </button>
-        </div>
-        <input type="hidden" name="_next" value="" />
-        <input type="hidden" name="_captcha" value="false" />
-      </form>
+          class="d-flex flex-column align-items-center justify-content-center"
+          action="https://formsubmit.co/francoariel1492@gmail.com"
+          method="POST"
+        >
+          <div class="col-sm-3 py-1">
+            <label for="fname" class="form-label lead fs-4"
+              >Nombre Completo</label
+            >
+            <input
+              type="text"
+              name="Nombre"
+              class="form-control"
+              id="inputAddress"
+              placeholder=""
+            />
+          </div>
+          <div class="col-sm-3 py-1">
+            <label for="inputEmail4" class="form-label lead fs-4">Email</label>
+            <input
+              type="email"
+              name="Email"
+              class="form-control"
+              id="inputEmail4"
+            />
+          </div>
+          <div class="col-sm-3 py-1">
+            <label for="inputState" class="form-label lead fs-4"
+              >Sesion que me interesa</label
+            >
+            <select id="inputState" name="Curso" class="form-select">
+              <eoption selected></eoption>
+              <option>Mini Sesion Estudio</option>
+              <option>Sesion Estudio</option>
+              <option>Sesion en exterior</option>
+            </select>
+          </div>
+          <div class="form-floating col-sm-4 py-3 my-3">
+            <textarea
+              class="form-control"
+              name="Comentarios"
+              id="floatingTextarea2"
+              style="height: 250px"
+            ></textarea>
+          </div>
+          <div class="py-2 pb-5">
+            <button type="submit" class="btn btn-lg">Enviar</button>
+          </div>
+          <input type="hidden" name="_next" value="" />
+          <input type="hidden" name="_captcha" value="false" />
+        </form>
       </section>
-      <section class="d-flex flex-row justify-content-end pe-5">
-      <a href="#head" class="px-5"
-        ><img src="css/icons/gmail.png" class="hvr-grow fixedbutton"
-      /></a>
-      <a href="#head" class="px-5"
-        ><img src="css/icons/facebook.png" class="hvr-grow fixedbutton"
-      /></a>
-      <a href="#head" class="px-5"
+      <footer class="d-flex flex-row justify-content-end section6 pe-5 col-12 g-0">
+        <a href="#head" class="px-4"
+          ><img src="css/icons/gmail.png" class="hvr-grow fixedbutton"
+        /></a>
+        <a href="#head" class="px-4"
         ><img src="css/icons/instagram.png" class="hvr-grow fixedbutton"
-      /></a>
-      </section>
+        /></a>
+        <a href="#head" class="px-4"
+          ><img src="css/icons/facebook.png" class="hvr-grow fixedbutton"
+        /></a>
+
+      </footer>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
 //------Fuente
 
 @font-face {
@@ -28,9 +36,10 @@ body{
     background-color: #ffe0e8;
     background-image: url(./elementosgraficos/camera2.png);
     background-attachment: scroll;
-    background-size: 10%;
+    background-size: 15%;
     background-repeat: no-repeat;
     color: #8787a3;
+    background-position-y: -5%;
 }
 
 .section2{
@@ -46,13 +55,72 @@ body{
     }
 }
 
+.gallery {
+    display: flex;
+    padding: 2px;
+    transition: .3s;
+    
+    &:hover &__image {
+        filter: grayscale(1);
+    }
+    
+    &__column {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+    
+    &__link {
+        margin: 2px;
+        overflow: hidden;
+        
+        &:hover {
+            .gallery__image {
+                filter: grayscale(0);
+            }
+            
+            .gallery__caption {
+                opacity: 1;
+            }
+        }
+    }
+    
+    &__thumb {
+        position: relative;
+    }
+    
+    &__image {
+        display: block;
+        width: 100%;
+        transition: .3s;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+    &__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px 15px 15px;
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        color: white;
+        opacity: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+        transition: .3s;
+    }
+}
+
 .section3{
     background-color: #aee5e8;
     color: #8787a3;
     background-image: url(./elementosgraficos/6.png);
     background-attachment: scroll;
     background-position:bottom;
-    background-size:35%;
+    background-size:25%;
     background-repeat: no-repeat;
 }
 
@@ -176,64 +244,7 @@ h1{
     background-repeat: no-repeat;
 }
 
-.gallery {
-	display: flex;
-	padding: 2px;
-	transition: .3s;
-	
-	&:hover &__image {
-		filter: grayscale(1);
-	}
-	
-	&__column {
-		display: flex;
-		flex-direction: column;
-		width: 25%;
-	}
-	
-	&__link {
-		margin: 2px;
-		overflow: hidden;
-		
-		&:hover {
-			.gallery__image {
-				filter: grayscale(0);
-			}
-			
-			.gallery__caption {
-				opacity: 1;
-			}
-		}
-	}
-	
-	&__thumb {
-		position: relative;
-	}
-	
-	&__image {
-		display: block;
-		width: 100%;
-		transition: .3s;
-		
-		&:hover {
-			transform: scale(1.1);
-		}
-	}
-	
-	&__caption {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		padding: 25px 15px 15px;
-		width: 100%;
-		font-family: 'Raleway', sans-serif;
-		font-size: 16px;
-		color: white;
-		opacity: 0;
-		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
-		transition: .3s;
-	}
-}
+
 
 .btn{
     background-color: #8787a3;
@@ -242,4 +253,18 @@ h1{
         background: #d6a7d1;
         color: #ededf9!important;
         }
+}
+
+@media screen and (max-width: 400px) {
+    .fixedbutton{
+      width: 10%;
+    }
+  
+}
+
+@media screen and (max-width: 820px) {
+    .fixedbutton{
+      width: 5%;
+    }
+  
 }
