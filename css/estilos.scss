@@ -1,11 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    // background: #000 !important;
+    // color: #0f0 !important;
+    // outline: solid #f00 1px !important;
 }
-body{
-    overflow-x: hidden;
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
+body{
+    font-family: Primera;
+    background-color: #ededf9;
+    overflow-x: hidden;
+}
 //------Fuente
 
 @font-face {
@@ -28,10 +37,25 @@ body{
     font-family: Quinta;
     src: url(fuente/gloryuss.ttf);
 }
-body{
-    font-family: Primera;
-    background-color: #ededf9;
+
+header {
+    background-color: #d6a7d1;
+    .logo{
+        width: 100%;
+    }
+    li {
+      a {
+        font-family: Cuarta;
+        color: #ededf9 !important;
+        transition: 0.5s !important;
+        &:hover {
+        background: #ffe0e8;
+        color: #8787a3!important;
+        }
+      }
+    }
 }
+
 .section1{
     background-color: #ffe0e8;
     background-image: url(./elementosgraficos/camera2.png);
@@ -40,6 +64,9 @@ body{
     background-repeat: no-repeat;
     color: #8787a3;
     background-position-y: -5%;
+    .maga{
+        width: 50%;
+    }
 }
 
 .section2{
@@ -52,6 +79,58 @@ body{
     }
     h2{
         color:#8787a3;
+    }
+    .sesiones{
+        background-image: url(./elementosgraficos/8.0.png);
+        background-attachment: scroll;
+        background-position: center;
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.section3{
+    background-color: #aee5e8;
+    color: #8787a3;
+    background-image: url(./elementosgraficos/6.png);
+    background-attachment: scroll;
+    background-position:bottom;
+    background-size:25%;
+    background-repeat: no-repeat;
+}
+
+
+
+.section4{
+    background-color: #d6a7d1;
+    background-attachment: scroll;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    h2{
+        color: #8787a3;
+    }
+    p{
+        color: #ededf9
+    };
+    .titulo3{
+        color: #ededf9;
+    }
+}
+
+.section5{
+    background-color: #d8f8f3;
+    color: #d6a7d1;
+    h2{
+        color: #d6a7d1;
+    }
+    .btn{
+        background-color: #8787a3;
+        color: #ededf9;
+        &:hover {
+            background: #d6a7d1;
+            color: #ededf9!important;
+            }
     }
 }
 
@@ -114,34 +193,7 @@ body{
     }
 }
 
-.section3{
-    background-color: #aee5e8;
-    color: #8787a3;
-    background-image: url(./elementosgraficos/6.png);
-    background-attachment: scroll;
-    background-position:bottom;
-    background-size:25%;
-    background-repeat: no-repeat;
-}
 
-
-
-.section4{
-    background-color: #d6a7d1;
-    background-attachment: scroll;
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    h2{
-        color: #8787a3;
-    }
-    p{
-        color: #ededf9
-    };
-    .titulo3{
-        color: #ededf9;
-    }
-}
 
 .subSection14{
     background-image: url(./elementosgraficos/9.1.png);
@@ -149,19 +201,15 @@ body{
     background-position:center;
     background-size:contain;
     background-repeat: no-repeat;
+    h2{
+        font-family: Tercera;
+        color: #8787a3;
+    }
 }
 
-.logo{
-    width: 100%;
-}
 
-header{
-    background-color: #d6a7d1;
-}
 
-.maga{
-    width: 50%;
-}
+
 
 .fixedbutton {
     width: 3%;
@@ -169,19 +217,7 @@ header{
     bottom: 0px;
 }
 
-header {
-    li {
-      a {
-        font-family: Cuarta;
-        color: #ededf9 !important;
-        transition: 0.5s !important;
-        &:hover {
-        background: #ffe0e8;
-        color: #8787a3!important;
-        }
-      }
-    }
-}
+
 
 .hvr-grow {
     display: inline-block;
@@ -212,10 +248,7 @@ header {
     font-family: Tercera;
 }
 
-.subTitulo3{
-    font-family: Tercera;
-    color: #8787a3;
-}
+
 
 h1{
     color: #8787a3;
@@ -228,32 +261,13 @@ h1{
 }
 
 
-.section5{
-    background-color: #d8f8f3;
-    color: #d6a7d1;
-    h2{
-        color: #d6a7d1;
-    }
-}
-
-.laburos{
-    background-image: url(./elementosgraficos/8.0.png);
-    background-attachment: scroll;
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
 
 
 
-.btn{
-    background-color: #8787a3;
-    color: #ededf9;
-    &:hover {
-        background: #d6a7d1;
-        color: #ededf9!important;
-        }
-}
+
+
+
+
 
 @media screen and (max-width: 400px) {
     .fixedbutton{

@@ -3,7 +3,14 @@
   padding: 0;
 }
 
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 body {
+  font-family: Primera;
+  background-color: #ededf9;
   overflow-x: hidden;
 }
 
@@ -27,9 +34,20 @@ body {
   font-family: Quinta;
   src: url(fuente/gloryuss.ttf);
 }
-body {
-  font-family: Primera;
-  background-color: #ededf9;
+header {
+  background-color: #d6a7d1;
+}
+header .logo {
+  width: 100%;
+}
+header li a {
+  font-family: Cuarta;
+  color: #ededf9 !important;
+  transition: 0.5s !important;
+}
+header li a:hover {
+  background: #ffe0e8;
+  color: #8787a3 !important;
 }
 
 .section1 {
@@ -40,6 +58,9 @@ body {
   background-repeat: no-repeat;
   color: #8787a3;
   background-position-y: -5%;
+}
+.section1 .maga {
+  width: 50%;
 }
 
 .section2 {
@@ -53,6 +74,56 @@ body {
 }
 .section2 h2 {
   color: #8787a3;
+}
+.section2 .sesiones {
+  background-image: url(./elementosgraficos/8.0.png);
+  background-attachment: scroll;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section3 {
+  background-color: #aee5e8;
+  color: #8787a3;
+  background-image: url(./elementosgraficos/6.png);
+  background-attachment: scroll;
+  background-position: bottom;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+.section4 {
+  background-color: #d6a7d1;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section4 h2 {
+  color: #8787a3;
+}
+.section4 p {
+  color: #ededf9;
+}
+.section4 .titulo3 {
+  color: #ededf9;
+}
+
+.section5 {
+  background-color: #d8f8f3;
+  color: #d6a7d1;
+}
+.section5 h2 {
+  color: #d6a7d1;
+}
+.section5 .btn {
+  background-color: #8787a3;
+  color: #ededf9;
+}
+.section5 .btn:hover {
+  background: #d6a7d1;
+  color: #ededf9 !important;
 }
 
 .gallery {
@@ -103,33 +174,6 @@ body {
   transition: 0.3s;
 }
 
-.section3 {
-  background-color: #aee5e8;
-  color: #8787a3;
-  background-image: url(./elementosgraficos/6.png);
-  background-attachment: scroll;
-  background-position: bottom;
-  background-size: 25%;
-  background-repeat: no-repeat;
-}
-
-.section4 {
-  background-color: #d6a7d1;
-  background-attachment: scroll;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.section4 h2 {
-  color: #8787a3;
-}
-.section4 p {
-  color: #ededf9;
-}
-.section4 .titulo3 {
-  color: #ededf9;
-}
-
 .subSection14 {
   background-image: url(./elementosgraficos/9.1.png);
   background-attachment: scroll;
@@ -137,33 +181,15 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-.logo {
-  width: 100%;
-}
-
-header {
-  background-color: #d6a7d1;
-}
-
-.maga {
-  width: 50%;
+.subSection14 h2 {
+  font-family: Tercera;
+  color: #8787a3;
 }
 
 .fixedbutton {
   width: 3%;
   position: fixed;
   bottom: 0px;
-}
-
-header li a {
-  font-family: Cuarta;
-  color: #ededf9 !important;
-  transition: 0.5s !important;
-}
-header li a:hover {
-  background: #ffe0e8;
-  color: #8787a3 !important;
 }
 
 .hvr-grow {
@@ -196,11 +222,6 @@ header li a:hover {
   font-family: Tercera;
 }
 
-.subTitulo3 {
-  font-family: Tercera;
-  color: #8787a3;
-}
-
 h1 {
   color: #8787a3;
 }
@@ -208,31 +229,6 @@ h1 {
 .subTitulo2 {
   font-family: Tercera;
   color: #ffe0e8;
-}
-
-.section5 {
-  background-color: #d8f8f3;
-  color: #d6a7d1;
-}
-.section5 h2 {
-  color: #d6a7d1;
-}
-
-.laburos {
-  background-image: url(./elementosgraficos/8.0.png);
-  background-attachment: scroll;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.btn {
-  background-color: #8787a3;
-  color: #ededf9;
-}
-.btn:hover {
-  background: #d6a7d1;
-  color: #ededf9 !important;
 }
 
 @media screen and (max-width: 400px) {
