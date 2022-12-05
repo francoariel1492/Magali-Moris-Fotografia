@@ -2,7 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -130,16 +133,28 @@
           </p>
         </div>
         <div class="ukiyoParallax">
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="css/carousel/1.jpg" class="d-block w-100" alt="...">
+                <img src="css/carousel/1.jpg" class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="css/carousel/10.jpg" class="d-block w-100" alt="...">
+                <img
+                  src="css/carousel/10.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
               <div class="carousel-item">
-                <img src="css/carousel/11.jpg" class="d-block w-100" alt="...">
+                <img
+                  src="css/carousel/11.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
             </div>
           </div>
@@ -312,17 +327,21 @@
             </p>
           </li>
         </ul>
-        <div class="ukiyoParallax" >
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="ukiyoParallax">
+          <div
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="css/carousel/8.jpg" class="d-block w-100" alt="...">
+                <img src="css/carousel/8.jpg" class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="css/carousel/9.jpg" class="d-block w-100" alt="...">
+                <img src="css/carousel/9.jpg" class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="css/carousel/1.jpg" class="d-block w-100" alt="...">
+                <img src="css/carousel/1.jpg" class="d-block w-100" alt="..." />
               </div>
             </div>
           </div>
@@ -592,16 +611,32 @@
           </div>
         </div>
         <div class="ukiyoParallax">
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="css/carousel/32.jpg" class="d-block w-100" alt="...">
+                <img
+                  src="css/carousel/32.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
               <div class="carousel-item">
-                <img src="css/carousel/33.jpg" class="d-block w-100" alt="...">
+                <img
+                  src="css/carousel/33.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
               <div class="carousel-item">
-                <img src="css/carousel/35.jpg" class="d-block w-100" alt="...">
+                <img
+                  src="css/carousel/35.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
             </div>
           </div>
@@ -618,7 +653,7 @@
         <h2 class="display-1 titulo py-5" id="scrollspyHeading4">Contacto</h2>
         <form
           class="d-flex flex-column align-items-center justify-content-center"
-          action="https://formsubmit.co/francoariel1492@gmail.com"
+          action="enviar.php"
           method="POST"
         >
           <div class="col-sm-3 py-1">
@@ -627,26 +662,35 @@
             >
             <input
               type="text"
-              name="Nombre"
+              name="name"
               class="form-control"
-              id="inputAddress"
+              id="inputName"
               placeholder=""
             />
           </div>
           <div class="col-sm-3 py-1">
             <label for="inputEmail4" class="form-label lead fs-4">Email</label>
             <input
-              type="email"
-              name="Email"
+              type="text"
+              name="email"
               class="form-control"
               id="inputEmail4"
+            />
+          </div>
+          <div class="col-sm-3 py-1">
+            <label for="fphone" class="form-label lead fs-4">Telefono</label>
+            <input
+              type="text"
+              name="phone"
+              class="form-control"
+              id="inputPhone"
             />
           </div>
           <div class="col-sm-3 py-1">
             <label for="inputState" class="form-label lead fs-4"
               >Sesion que me interesa</label
             >
-            <select id="inputState" name="Curso" class="form-select">
+            <select id="inputState" name="sesion" type="text" class="form-select">
               <eoption selected></eoption>
               <option>Mini Sesion Estudio</option>
               <option>Sesion Estudio</option>
@@ -655,8 +699,9 @@
           </div>
           <div class="form-floating col-sm-4 py-3 my-3">
             <textarea
+              type="text"
               class="form-control"
-              name="Comentarios"
+              name="message"
               id="floatingTextarea2"
               style="height: 250px"
             ></textarea>
@@ -664,40 +709,43 @@
           <div class="py-2 pb-5">
             <button type="submit" class="btn btn-lg">Enviar</button>
           </div>
-          <input type="hidden" name="_next" value="" />
-          <input type="hidden" name="_captcha" value="false" />
+          <!-- <input type="hidden" name="_next" value="" />
+          <input type="hidden" name="_captcha" value="false" /> -->
         </form>
       </section>
-      <footer class="d-flex flex-row justify-content-end section6 pe-5 col-12 g-0">
+      <footer
+        class="d-flex flex-row justify-content-end section6 pe-5 col-12 g-0"
+      >
         <a href="#head" class="px-4 dropup"
-          ><img src="css/icons/gmail.png" type="button" class="dropdown-toggle hvr-grow fixedbutton" data-bs-toggle="dropdown" aria-expanded="false"
-        /><ul class="dropdown-menu" id="dropUp">
-          <p class="text-center" >Escribime! mmfotografiademascotas@gmail.com</p>
-        </ul></a>
-        <a href="https://www.instagram.com/magalimorisfotografia/?igshid=YmMyMTA2M2Y%3D" class="px-4"
-        ><img src="css/icons/instagram.png" class="hvr-grow fixedbutton"
+          ><img
+            src="css/icons/gmail.png"
+            type="button"
+            class="dropdown-toggle hvr-grow fixedbutton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          />
+          <ul class="dropdown-menu" id="dropUp">
+            <p class="text-center">
+              Escribime! mmfotografiademascotas@gmail.com
+            </p>
+          </ul></a
+        >
+        <a
+          href="https://www.instagram.com/magalimorisfotografia/?igshid=YmMyMTA2M2Y%3D"
+          class="px-4"
+          ><img src="css/icons/instagram.png" class="hvr-grow fixedbutton"
         /></a>
-        <a href="https://www.facebook.com/MagaliMorisFotografia?mibextid=ZbWKwL" class="px-4"
+        <a
+          href="https://www.facebook.com/MagaliMorisFotografia?mibextid=ZbWKwL"
+          class="px-4"
           ><img src="css/icons/facebook.png" class="hvr-grow fixedbutton"
         /></a>
       </footer>
     </main>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/ukiyojs@3.0.3/dist/ukiyo.min.js"></script> -->
-    <!-- <script>
-      const targets = document.querySelectorAll(".ukiyo");
-      targets.forEach((target) => {
-        const parallax = new Ukiyo(target, {
-          speed: 2,
-          scale: 1.25,
-        });
-      });
-    </script> -->
-    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    
   </body>
 </html>
