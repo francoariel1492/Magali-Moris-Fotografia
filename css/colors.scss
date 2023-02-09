@@ -1,0 +1,11 @@
+$first: #ededf9;
+$second: #8787a3;
+$third: #d6a7d1;
+$fourth: #aee5e8;
+$fifth: #d8f8f3;
+$sixth: #ffe0e8;
+
+$gradientFirst: radial-gradient(circle, rgba(255,255,255,1) 25%, $first 100%);
+$gradientSecond: radial-gradient(circle, $first 0%, $fourth 75%);
+$gradientThird: linear-gradient(90deg, $second 0%, $first 50%);
+$gradientFourth: radial-gradient(circle, rgba(169,194,190,1) 25%, rgba(170,145,127,1) 30%);

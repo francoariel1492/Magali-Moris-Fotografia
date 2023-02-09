@@ -1,9 +1,9 @@
+@import url("./colors.scss");
+
 *{
+    text-align: center;
     margin: 0;
     padding: 0;
-    // background: #000 !important;
-    // color: #0f0 !important;
-    // outline: solid #f00 1px !important;
 }
 html, body {
     max-width: 100% !important;
@@ -12,7 +12,6 @@ html, body {
 
 body{
     font-family: Primera;
-    background-color: #ededf9;
     overflow-x: hidden;
 }
 //------Fuente
@@ -39,31 +38,34 @@ body{
 }
 
 header {
-    background-color: #d6a7d1;
+    background: linear-gradient(90deg, rgba(214,167,209,1) 0%, rgba(237,237,249,1) 50%);
+    
     .logo{
         width: 100%;
     }
     li {
+        font-size: 1.3rem !important;
       a {
         font-family: Cuarta;
-        color: #ededf9 !important;
+        color: #8787a3 !important;
         transition: 0.5s !important;
         &:hover {
-        background: #ffe0e8;
-        color: #8787a3!important;
+        background: #d6a7d1;
+        color: #ededf9!important;
         }
       }
     }
 }
 
 .section1{
-    background-color: #ffe0e8;
-    background-image: url(./elementosgraficos/camera2.png);
+    background-image: url(./elementosgraficos/camera2.png), radial-gradient(circle, rgba(214,167,209,1) 0%, rgba(255,224,232,1) 50%);
     background-attachment: scroll;
-    background-size: 15%;
+    background-position: center;
+    background-size:contain;
     background-repeat: no-repeat;
     color: #8787a3;
-    background-position-y: -5%;
+    text-shadow: 1px 1px #d8f8f3;
+    background-position-x: -5%;
     .maga{
         width: 50%;
     }
@@ -72,8 +74,10 @@ header {
 .section2{
     background-attachment: scroll;
     background-position: center;
+    background: radial-gradient(circle, #ffe0e8 25%, #ededf9 30%);
     background-size:contain;
     background-repeat: no-repeat;
+    text-shadow: 2px 2px #ffe0e8;
     p{
         color: #8787a3;
     }
@@ -90,28 +94,33 @@ header {
 }
 
 .section3{
-    background-color: #aee5e8;
     color: #8787a3;
-    background-image: url(./elementosgraficos/6.png);
+    background-image: url(./elementosgraficos/6.png), radial-gradient(circle, rgba(237,237,249,1) 0%, rgba(174,229,232,1) 50%);
     background-attachment: scroll;
-    background-position:bottom;
-    background-size:25%;
+    background-position:center;
+    background-size:contain;
     background-repeat: no-repeat;
+    text-shadow: 2px 2px white;
 }
 
 
 
 .section4{
-    background-color: #d6a7d1;
+    background: radial-gradient(circle, rgba(237,237,249,1) 0%, rgba(214,167,209,1) 50%);
     background-attachment: scroll;
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
     h2{
+        text-shadow: 2px 2px #8787a3;
+    }
+    h3{
         color: #8787a3;
+        text-shadow: 1px 1px #ededf9;
     }
     p{
-        color: #ededf9
+        color: #ededf9;
+        text-shadow: 2px 2px #8787a3;
     };
     .titulo3{
         color: #ededf9;
@@ -119,8 +128,9 @@ header {
 }
 
 .section5{
-    background-color: #d8f8f3;
+    background: linear-gradient(0deg, rgba(174,229,232,1) 0%, rgba(216,248,243,1) 50%);;
     color: #d6a7d1;
+    text-shadow: 1px 1px #ededf9;
     h2{
         color: #d6a7d1;
     }
@@ -246,6 +256,8 @@ header {
 
 .titulo{
     font-family: Segunda;
+    font-size: 4rem;
+    text-align: center;
 }
 
 .subTitulo{
@@ -289,4 +301,53 @@ h1{
     .ukiyoParallax{
         display: none;
     }
-  }
+}
+
+
+
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ffe0e8;
+}
+.spacer2{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ededf9;
+}
+.spacer3{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #aee5e8;
+}
+.spacer4{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #d6a7d1;
+}
+
+.layer{
+    background-image: url('./waves/wave1.svg');
+}
+
+.layer2{
+    background-image: url('./waves/wave2.svg');
+}
+.layer3{
+    background-image: url('./waves/wave3.svg');
+}
+.layer4{
+    background-image: url('./waves/wave4.svg');
+}
