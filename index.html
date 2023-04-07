@@ -93,7 +93,7 @@
       </nav>
     </header>
     <main class="row">
-      <section class="section1 col-12 g-0  p-md-5">
+      <section class="section1 col-12 g-0 p-md-5">
         <h1 class="display-1 pt-5 titulo">Magalí Moris Fotografía</h1>
         <div
           class="d-flex flex-sm-row flex-column justify-content-center align-items-center pt-5"
@@ -105,9 +105,12 @@
               familias. Me encantan los perros desde que soy muy chica y poco a
               poco me fuí adentrando cada vez más en su mundo. Es mi objetivo
               poder capturar en imágenes el vínculo que tenés con tu amigo de 4
-              patas y que ese recuerdo te acompañe por siempre. ¡Les doy la
-              bienvenida a mi web!
+              patas y que ese recuerdo te acompañe por siempre.
             </p>
+            <span class="welcome pt-5 mt-5">
+              ¡Les doy la
+              bienvenida a mi web!
+            </span>
           </div>
           <div class="col">
             <img src="css/maga/maga.jpg" class="maga w-100 img-fluid p-md-5" />
@@ -287,7 +290,7 @@
       </section>
       <div class="spacer2 layer2"></div>
       <section class="section3 col-12 g-0">
-        <h2 class="display-1 titulo py-5" id="scrollspyHeading2">Propuestas</h2>
+        <h2 class="display-3 titulo py-5" id="scrollspyHeading2">Propuestas</h2>
         <ul class="list-unstyled">
           <li class="py-2">
             <h3 class="display-4 subTitulo">Mini sesion en estudio</h3>
@@ -412,7 +415,7 @@
             <h3 class="fs-1 py-2 subTitulo2">
               ¿Que tengo que llevar si la sesion se realiza en exterior?
             </h3>
-            <p class="fs-5 p-2 m-2">
+            <p class="fs-5 p-2 m-2 dark">
               Es súper importante que tu perro asista con collar/pretal, correa
               y chapita de identificación (no te preocupes por esos detalles en
               las fotos. Si lo deseas, pueden borrarse en el proceso de
@@ -430,7 +433,7 @@
             <h3 class="fs-1 py-2 subTitulo2">
               ¿En que formato se entregan las fotos?
             </h3>
-            <p class="fs-5 p-2 m-2">
+            <p class="fs-5 p-2 m-2 dark">
               Todas las fotografías se entregan en formato digital y editadas en
               alta calidad. El objetivo es que puedas darle el uso que quieras:
               imprimirlas, revelarlas, usarlas para las redes, etc.
@@ -447,7 +450,7 @@
             <h3 class="fs-1 py-2 subTitulo2">
               ¿Cuanto demora la entrega de las fotos?
             </h3>
-            <p class="fs-5 p-2 m-2">
+            <p class="fs-5 p-2 m-2 dark">
               Desde el momento en que recibo la selección de fotos elegidas, la
               entrega demora alrededor de 10 días hábiles.
             </p>
@@ -461,7 +464,7 @@
         >
           <div class="col">
             <h3 class="fs-1 py-2 subTitulo2">¿Como recibo las fotos?</h3>
-            <p class="fs-5 p-2 m-2">
+            <p class="fs-5 p-2 m-2 dark">
               Tanto las fotos para preselección (que llevan marca de agua) como
               las de entrega, se envían a través de We Transfer. Recordá que
               esta plataforma te da un plazo de 7 días para realizar la
@@ -479,7 +482,7 @@
             <h3 class="fs-1 py-2 subTitulo2">
               ¿Se realiza la entrega de fotos sin editar?
             </h3>
-            <p class="fs-5 p-2 m-2">
+            <p class="fs-5 p-2 m-2 dark">
               No se realiza la entrega de fotos en crudo (sin editar), sin
               excepción. Mi objetivo es que tengas en tus manos un trabajo de
               calidad y eso incluye el proceso de edición.
@@ -530,7 +533,7 @@
           class="d-flex flex-column flex-sm-row-reverse align-items-center pt-1 pb-5 subSection12"
         >
           <div class="col">
-            <h3 class="fs-1 py-2 subTitulo2">
+            <h3 class="fs-1 py-2 p-5 subTitulo2">
               ¡Ya me decidi! ¿Como hago para reservar una sesion?
             </h3>
             <p class="fs-5 p-2 m-2">
@@ -587,8 +590,7 @@
           >
             <h3 class="fs-1 pt-5 mt-5">
               ¿Tenes alguna duda que no haya sido respondida anteriormente? Te
-              invito a dejarme tu consulta en este formulario de contacto
-              haciendo click aca.
+              invito a dejarme tu consulta en el siguiente formulario de contacto.
             </h3>
           </div>
         </div>
@@ -666,10 +668,15 @@
             <label for="inputState" class="form-label lead fs-4"
               >Sesion que me interesa</label
             >
-            <select id="inputState" name="sesion" type="text" class="form-select">
+            <select
+              id="inputState"
+              name="sesion"
+              type="text"
+              class="form-select"
+            >
               <eoption selected></eoption>
-              <option>Mini Sesion Estudio</option>
-              <option>Sesion Estudio</option>
+              <option>Mini Sesion en Estudio</option>
+              <option>Sesion en Estudio</option>
               <option>Sesion en exterior</option>
             </select>
           </div>
@@ -685,8 +692,6 @@
           <div class="py-2 pb-5">
             <button type="submit" class="btn btn-lg">Enviar</button>
           </div>
-          <!-- <input type="hidden" name="_next" value="" />
-          <input type="hidden" name="_captcha" value="false" /> -->
         </form>
       </section>
       <footer

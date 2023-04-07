@@ -5,7 +5,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   max-width: 100% !important;
   overflow-x: hidden !important;
 }
@@ -55,17 +56,26 @@ header li a:hover {
 }
 
 .section1 {
-  background-image: url(./elementosgraficos/camera2.png), radial-gradient(circle, rgb(214, 167, 209) 0%, rgb(255, 224, 232) 50%);
+  background-image: url(./elementosgraficos/camera2.png);
+  background-color: #ffe0e8;
   background-attachment: scroll;
   background-position: center;
-  background-size: contain;
+  background-size: 15%;
   background-repeat: no-repeat;
   color: #8787a3;
   text-shadow: 1px 1px #d8f8f3;
   background-position-x: -5%;
+  background-position-y: -20%;
 }
 .section1 .maga {
   width: 50%;
+}
+
+.welcome {
+  font-family: Segunda;
+  font-size: 2.5rem;
+  color: #8787a3;
+  font-weight: bold;
 }
 
 .section2 {
@@ -83,7 +93,6 @@ header li a:hover {
   color: #8787a3;
 }
 .section2 .sesiones {
-  background-image: url(./elementosgraficos/8.0.png);
   background-attachment: scroll;
   background-position: center;
   background-size: contain;
@@ -92,11 +101,7 @@ header li a:hover {
 
 .section3 {
   color: #8787a3;
-  background-image: url(./elementosgraficos/6.png), radial-gradient(circle, rgb(237, 237, 249) 0%, rgb(174, 229, 232) 50%);
-  background-attachment: scroll;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: radial-gradient(circle, rgb(237, 237, 249) 0%, rgb(174, 229, 232) 50%);
   text-shadow: 2px 2px white;
 }
 
@@ -120,6 +125,10 @@ header li a:hover {
 }
 .section4 .titulo3 {
   color: #ededf9;
+}
+.section4 .dark {
+  color: #8787a3;
+  text-shadow: none;
 }
 
 .section5 {
@@ -234,12 +243,14 @@ header li a:hover {
 
 .titulo {
   font-family: Segunda;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  font-weight: bold;
   text-align: center;
 }
 
 .subTitulo {
   font-family: Tercera;
+  font-weight: bold;
 }
 
 h1 {
@@ -251,26 +262,6 @@ h1 {
   color: #ffe0e8;
 }
 
-@media screen and (max-width: 820px) {
-  .fixedbutton {
-    width: 5%;
-  }
-}
-@media screen and (max-width: 650px) {
-  .fixedbutton {
-    width: 7%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .fixedbutton {
-    width: 10%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .ukiyoParallax {
-    display: none;
-  }
-}
 .spacer {
   aspect-ratio: 960/300;
   width: 100%;
@@ -321,4 +312,37 @@ h1 {
 
 .layer4 {
   background-image: url("./waves/wave4.svg");
+}
+
+@media screen and (max-width: 820px) {
+  .fixedbutton {
+    width: 5%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .fixedbutton {
+    width: 7%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .fixedbutton {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ukiyoParallax {
+    display: none;
+  }
+}
+@media screen and (min-width: 400px) {
+  .sesiones {
+    background-image: url(./elementosgraficos/8.0.png);
+  }
+  .section3 {
+    background-image: url(./elementosgraficos/6.png), radial-gradient(circle, rgb(237, 237, 249) 0%, rgb(174, 229, 232) 50%);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }/*# sourceMappingURL=estilos.css.map */
